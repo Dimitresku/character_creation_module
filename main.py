@@ -1,6 +1,8 @@
 """Возвращает случайное число из определенного диапазона."""
 from random import randint
 
+from graphic_arts.start_game_banner import run_screensaver
+
 
 def attack(char_name: str, char_class: str) -> str:
     """Наносит урон противнику в зависимости от класса."""
@@ -88,7 +90,8 @@ def choice_char_class() -> str:
     return char_class
 
 
-def main():
+if __name__ == '__main__':
+    run_screensaver()
     """Выбор имени персонажа."""
     print('Приветствую тебя, искатель приключений!')
     print('Прежде чем начать игру...')
